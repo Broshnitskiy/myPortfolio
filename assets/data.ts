@@ -18,6 +18,14 @@ export const projects: IProject[] = [
   },
   {
     id: 2,
+    name: "Pet breed explorer",
+    urlCode: "https://github.com/Broshnitskiy/pet-breed-explorer",
+    urlLivePage: "https://pet-breed-explorer-eta.vercel.app/",
+    description: "",
+    stack: "next.js, server components, tailwind css, ts",
+  },
+  {
+    id: 3,
     name: "Hounter",
     urlCode: "https://github.com/Broshnitskiy/hounter",
     urlLivePage: "https://broshnitskiy.github.io/hounter/",
@@ -25,7 +33,7 @@ export const projects: IProject[] = [
     stack: "react.js, styled-components, slick-carousel, react-icons",
   },
   {
-    id: 3,
+    id: 4,
     name: "Finance_ledger",
     urlCode: "https://github.com/Broshnitskiy/finance_ledger",
     urlLivePage: "https://finance-ledger-brz.netlify.app/",
@@ -33,7 +41,7 @@ export const projects: IProject[] = [
     stack: "react.js, styled-components, yup, react-photoswipe-gallery, formik",
   },
   {
-    id: 4,
+    id: 5,
     name: "Filmoteka",
     urlCode: "https://github.com/Broshnitskiy/goit-39-js-tp",
     urlLivePage: "https://maksymkushnirov.github.io/goit-39-js-tp/",
@@ -41,7 +49,7 @@ export const projects: IProject[] = [
     stack: "vanilla js, sass, parcel, tui-pagination, axios",
   },
   {
-    id: 5,
+    id: 6,
     name: "3D Modelling",
     urlCode: "https://github.com/Broshnitskiy/command9_freedom_site",
     urlLivePage: "https://dimmac.github.io/command9_freedom_site/index.html",
@@ -49,7 +57,7 @@ export const projects: IProject[] = [
     stack: "vanilla js, sass, parcel",
   },
   {
-    id: 6,
+    id: 7,
     name: "Snake-game-react",
     urlCode: "https://github.com/Broshnitskiy/snake-game-react",
     urlLivePage: "https://broshnitskiy.github.io/snake-game-react/",
@@ -57,7 +65,7 @@ export const projects: IProject[] = [
     stack: "react.js, styled-components, axios",
   },
   {
-    id: 7,
+    id: 8,
     name: "Search images",
     urlCode: "https://github.com/Broshnitskiy/goit-react-hw-04-hooks-images",
     urlLivePage:

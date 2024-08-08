@@ -63,7 +63,7 @@ export default function Home() {
           return (
             <div
               key={project.id}
-              className="group rounded-lg border border-transparent px-5 py-2 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+              className="group flex flex-col rounded-lg border border-transparent px-5 py-5 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
             >
               <a
                 href={project.urlLivePage}
@@ -83,7 +83,7 @@ export default function Home() {
                 </p>
               </a>
               <a
-                className="text-sky-950 group rounded-lg border border-transparent px-0 py-0 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                className="text-sky-950 mt-auto group rounded-lg border border-transparent px-0 py-0 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
                 href={project.urlCode}
                 target="_blank"
                 rel="noopener noreferrer"

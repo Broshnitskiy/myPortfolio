@@ -1,4 +1,5 @@
 import { projects } from "@/assets/data";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -71,6 +72,13 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <Image
+                  src={project.image}
+                  alt={project.name}
+                  className="w-full h-48 object-cover rounded-md mb-4"
+                  width={600}
+                  height={600}
+                />
                 <h2 className={`mb-3 text-2xl font-semibold`}>
                   {project.name}{" "}
                   <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
@@ -78,18 +86,22 @@ export default function Home() {
                   </span>
                 </h2>
 
-                <p className={`m-0 max-w-[30ch] text-sm`}>
+                <p className={`m-0 xl:max-w-[30ch] text-sm`}>
                   STACK: {project.stack}.
                 </p>
               </a>
-              <a
-                className="text-sky-950 mt-auto group rounded-lg border border-transparent px-0 py-0 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-                href={project.urlCode}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Source code on GitHub
-              </a>
+              {project.urlCode ? (
+                <a
+                  className="text-orange-500 mt-auto group rounded-lg border border-transparent px-0 py-0 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+                  href={project.urlCode}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Source code on GitHub
+                </a>
+              ) : (
+                <p className="text-orange-500">Source code is closed by NDA</p>
+              )}
             </div>
           );
         })}

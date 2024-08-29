@@ -1,3 +1,16 @@
+import Urb from "@/images/urb.png";
+import Commerce from "@/images/e-commerce.png";
+import Pets from "@/images/pets.png";
+import Hounter from "@/images/hounter.png";
+import Legend from "@/images/legend.png";
+import Films from "@/images/films.png";
+import Modelling from "@/images/modelling.png";
+import Snake from "@/images/snake.png";
+import SearchImg from "@/images/search-img.png";
+import Buy from "@/images/buy.png";
+import Mena from "@/images/mena.png";
+import { StaticImageData } from "next/image";
+
 interface IProject {
   id: number;
   name: string;
@@ -5,6 +18,7 @@ interface IProject {
   urlLivePage: string;
   description: string;
   stack: string;
+  image: StaticImageData;
 }
 
 export const projects: IProject[] = [
@@ -15,6 +29,7 @@ export const projects: IProject[] = [
     urlLivePage: "https://e-commerce-prod.vercel.app/",
     description: "",
     stack: "next.js, redux, yup, formik, axios, material ui",
+    image: Commerce,
   },
   {
     id: 2,
@@ -23,6 +38,7 @@ export const projects: IProject[] = [
     urlLivePage: "https://pet-breed-explorer-eta.vercel.app/",
     description: "",
     stack: "next.js, server components, tailwind css, ts",
+    image: Pets,
   },
   {
     id: 3,
@@ -31,6 +47,7 @@ export const projects: IProject[] = [
     urlLivePage: "https://broshnitskiy.github.io/hounter/",
     description: "",
     stack: "react.js, styled-components, slick-carousel, react-icons",
+    image: Hounter,
   },
   {
     id: 4,
@@ -39,6 +56,7 @@ export const projects: IProject[] = [
     urlLivePage: "https://finance-ledger-brz.netlify.app/",
     description: "",
     stack: "react.js, styled-components, yup, react-photoswipe-gallery, formik",
+    image: Legend,
   },
   {
     id: 5,
@@ -47,6 +65,7 @@ export const projects: IProject[] = [
     urlLivePage: "https://maksymkushnirov.github.io/goit-39-js-tp/",
     description: "",
     stack: "vanilla js, sass, parcel, tui-pagination, axios",
+    image: Films,
   },
   {
     id: 6,
@@ -55,6 +74,7 @@ export const projects: IProject[] = [
     urlLivePage: "https://dimmac.github.io/command9_freedom_site/index.html",
     description: "",
     stack: "vanilla js, sass, parcel",
+    image: Modelling,
   },
   {
     id: 7,
@@ -63,6 +83,7 @@ export const projects: IProject[] = [
     urlLivePage: "https://broshnitskiy.github.io/snake-game-react/",
     description: "",
     stack: "react.js, styled-components, axios",
+    image: Snake,
   },
   {
     id: 8,
@@ -73,5 +94,34 @@ export const projects: IProject[] = [
     description: "",
     stack:
       "react.js, react-toastify, axios, react-scroll, react-loader-spinner",
+    image: SearchImg,
+  },
+  {
+    id: 9,
+    name: "Buy All",
+    urlCode: "",
+    urlLivePage:
+      "https://www.buy-all.store/?srsltid=AfmBOorhR1o-ScsOjNXqpAbxFCUrjMWfK-UwBrGz2Sgm4Ue1rz30fRzL",
+    description: "NDA",
+    stack: "react.js, next.js, axios, nest.js, postgresql, typeOrm, gitLab",
+    image: Buy,
+  },
+  {
+    id: 10,
+    name: "URBSoft",
+    urlCode: "",
+    urlLivePage: "https://urbsoft.pro/",
+    description: "NDA",
+    stack: "next.js, zustand, scss, css animation",
+    image: Urb,
+  },
+  {
+    id: 11,
+    name: "MENA FX",
+    urlCode: "",
+    urlLivePage: "https://www.menafx.org/",
+    description: "NDA",
+    stack: "react.js, strapi js, scss, graphql, appolo",
+    image: Mena,
   },
 ];

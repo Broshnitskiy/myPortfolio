@@ -9,6 +9,7 @@ import Snake from "@/images/snake.png";
 import SearchImg from "@/images/search-img.png";
 import Buy from "@/images/buy.png";
 import Mena from "@/images/mena.png";
+import Elium from "@/images/elium.png";
 import { StaticImageData } from "next/image";
 
 interface IProject {
@@ -123,5 +124,14 @@ export const projects: IProject[] = [
     description: "NDA",
     stack: "react.js, strapi js, scss, graphql, appolo",
     image: Mena,
+  },
+  {
+    id: 12,
+    name: "Elium",
+    urlCode: "",
+    urlLivePage: "https://elium.org.ua/",
+    description: "NDA",
+    stack: "html css js node",
+    image: Elium,
   },
 ];
